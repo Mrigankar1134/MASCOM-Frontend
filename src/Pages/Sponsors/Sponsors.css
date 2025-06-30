@@ -1,0 +1,109 @@
+.sponsors-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px;
+  }
+  
+  .sponsors-title {
+    font-size: 8rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    transform-style: preserve-3d;
+    
+    /* Enhanced text effects */
+    background: linear-gradient(135deg, #fff 0%, #f0f0f0 50%, #fff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    /* Subtle glow */
+    filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.3));
+  }
+  
+  .sponsors-title span {
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  .sponsors-title span:hover {
+    transform: translateY(-5px) rotateX(15deg);
+    text-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Quantum Grid Background */
+  .quantum-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: 
+      linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    z-index: 1;
+    animation: gridPulse 4s ease-in-out infinite;
+  }
+  
+  @keyframes gridPulse {
+    0%, 100% { opacity: 0.05; }
+    50% { opacity: 0.15; }
+  }
+  
+  /* Floating particles */
+  .floating-particle {
+    pointer-events: none;
+    z-index: 5;
+  }
+  
+  /* Pulse background */
+  .pulse-bg {
+    pointer-events: none;
+    animation: pulseGlow 6s ease-in-out infinite;
+  }
+  
+  @keyframes pulseGlow {
+    0%, 100% { opacity: 0.02; transform: scale(1); }
+    50% { opacity: 0.08; transform: scale(1.1); }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .sponsors-title {
+      font-size: 4rem;
+      letter-spacing: 0.05em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sponsors-title {
+      font-size: 2.5rem;
+      letter-spacing: 0.02em;
+    }
+  }
+  
+  /* Smooth page transitions */
+  .sponsors-container * {
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  
+  /* Enhanced performance */
+  .sponsors-container {
+    will-change: transform, opacity;
+  }
+  
+  .sponsors-title {
+    will-change: transform, opacity, filter;
+  }

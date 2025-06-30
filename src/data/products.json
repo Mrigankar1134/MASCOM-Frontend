@@ -1,0 +1,86 @@
+[
+  {
+    "productId": "prd001",
+    "name": "Batch T-Shirt",
+    "description": "Official IIM Amritsar Batch T-Shirt with logo print.",
+    "price": 499,
+    "availableSizes": ["S", "M", "L", "XL", "XXL"],
+    "allowCustomName": false,
+    "category": "clothing",
+    "subCategory": "tshirt",
+    "launchTime": "2025-06-01T09:00:00Z",
+    "available": true,
+    "variants": [
+      {
+        "color": "Red",
+        "imageUrls": [
+          "https://images.unsplash.com/photo-1581655353564-df123a1eb820?q=80&w=2112&auto=format&fit=crop"
+        ]
+      },
+      {
+        "color": "Blue",
+        "imageUrls": [
+          "https://images.unsplash.com/photo-1574180566232-aaad1b5b8450?q=80&w=3087&auto=format&fit=crop"
+        ]
+      },
+      {
+        "color": "Black",
+        "imageUrls": [
+          "https://plus.unsplash.com/premium_photo-1691367279053-ffa6edf80181?q=80&w=3087&auto=format&fit=crop"
+        ]
+      }
+    ]
+  },
+  {
+    "productId": "prd002",
+    "name": "Batch Hoodie",
+    "description": "Premium IIM Amritsar hoodie with optional custom name.",
+    "price": 899,
+    "availableSizes": ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+    "allowCustomName": true,
+    "category": "clothing",
+    "subCategory": "hoodie",
+    "launchTime": "2025-06-01T09:00:00Z",
+    "available": true,
+    "variants": [
+      {
+        "color": "Grey",
+        "imageUrls": [
+          "https://images.unsplash.com/photo-1542406775-ade58c52d2e4?q=80&w=3087&auto=format&fit=crop",
+          "https://images.unsplash.com/photo-1556821840-3a63f95609a7?q=80&w=3087&auto=format&fit=crop"
+        ]
+      },
+      {
+        "color": "Black",
+        "imageUrls": [
+          "https://images.unsplash.com/photo-1609873814058-a8928924184a?q=80&w=3087&auto=format&fit=crop"
+        ]
+      }
+    ]
+  },
+  {
+    "productId": "prd003",
+    "name": "IIM Cap",
+    "description": "Adjustable red cap with IIM Amritsar branding.",
+    "price": 199,
+    "availableSizes": ["Free"],
+    "allowCustomName": false,
+    "category": "accessory",
+    "subCategory": "cap",
+    "launchTime": "2025-06-01T09:00:00Z",
+    "available": true,
+    "vendorInfo": {
+      "name": "Capify Merch",
+      "contact": "info@capify.in"
+    },
+    "variants": [
+      {
+        "color": "Red",
+        "imageUrls": [
+          "https://images.unsplash.com/photo-1560774358-d727658f457c?q=80&w=2864&auto=format&fit=crop",
+          "https://plus.unsplash.com/premium_photo-1695604460938-e985e075bfae?q=80&w=3087&auto=format&fit=crop"
+        ]
+      }
+    ]
+  }
+]

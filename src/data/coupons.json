@@ -1,0 +1,13 @@
+{
+    "couponCode": "WELCOME10",
+    "discountType": "percentage",
+    "discountValue": 10,       
+    "maxDiscount": 100,        
+    "minCartValue": 500,       
+    "validFrom": "2025-06-01T00:00:00Z",
+    "validTo": "2025-06-30T23:59:59Z",
+    "usageLimit": 1000,        
+    "userUsageLimit": 1,       
+    "status": "active",        
+    "createdBy": "admin001"
+  }
