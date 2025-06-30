@@ -456,6 +456,18 @@ export default function KillerSponsorsPage() {
     target: containerRef,
     offset: ["start start", "end end"]
   });
+  
+  // Use scrollYProgress to create a scroll-based animation value
+  // Define opacity for scroll animation
+  const opacityValue = useTransform(scrollYProgress, [0, 0.5, 1], [0.5, 1, 0.5]);
+  
+  // Define the ScrollAnimatedElement component inside the Sponsors component
+  const ScrollAnimatedElement = () => (
+    <motion.div style={{ opacity: opacityValue }} className="scroll-animated-element">
+      {/* Content that changes opacity based on scroll */}
+      <h3>Scroll to see animation effect</h3>
+    </motion.div>
+  );
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -645,6 +657,10 @@ export default function KillerSponsorsPage() {
         className="absolute top-1/3 right-20 w-3 h-3 bg-blue-400/20 rounded-full"
         yRange={[0, -150]}
         scrollRange={[0.2, 0.8]}
+      />
+      
+      {/* Add the ScrollAnimatedElement to use the opacity variable */}
+      <ScrollAnimatedElement
       />
       <FloatingElement
         className="absolute bottom-1/3 left-1/4 w-4 h-4 bg-purple-400/15 rounded-full"
